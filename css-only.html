@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiarash Forouzmand - CSS Only</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css-only.css">
+</head>
+<body class="css-only-body">
+    <header class="css-header">
+        <div class="css-container">
+            <div class="css-logo">
+                <div class="code-icon">{} </div>
+                <h1>Kiarash Forouzmand</h1>
+            </div>
+            <nav class="css-nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="index.html">BOOTSTRAP VERSION</a></li> <!-- Link to other page -->
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="css-main">
+        <section id="home" class="css-section">
+            <div class="css-container">
+                <h2 class="css-title">Welcome to My CSS-Only Portfolio</h2>
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                         alt="Web Development" 
+                         class="rotating-image">
+                    <p class="image-caption">Hover to see rotation effect!</p>
+                </div>
+                <div class="lists-container">
+                    <div class="list-box">
+                        <h3>Ordered Skills List</h3>
+                        <ol class="ordered-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Responsive Design</li>
+                            <li>UI/UX Principles</li>
+                            <li>Version Control (Git)</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="list-box">
+                        <h3>Unordered Services</h3>
+                        <ul class="unordered-list">
+                            <li>Website Development</li>
+                            <li>Responsive Design</li>
+                            <li>Website Maintenance</li>
+                            <li>SEO Optimization</li>
+                            <li>Performance Testing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="external-links">
+                    <h3>Useful External Resources:</h3>
+                    <p>
+                        <a href="https://developer.mozilla.org" class="text-link">MDN Web Docs</a> | 
+                        <a href="https://css-tricks.com" class="text-link">CSS-Tricks</a> | 
+                        <a href="https://codepen.io" class="image-link">
+                            <img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png" 
+                                 alt="CodePen" 
+                                 width="100">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="css-section alt-section">
+            <div class="css-container">
+                <h2 class="css-title">About Me</h2>
+                
+                <div class="content-grid">
+                    <article class="main-content">
+                        <h3>My Journey</h3>
+                        <p>Started coding at 16, fell in love with web development, and never looked back...</p>
+                        <div class="audio-section">
+                            <h4>Listen to my thoughts on web development:</h4>
+                            <audio controls>
+                                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p><small>Sample audio courtesy of SoundHelix</small></p>
+                        </div>
+                    </article>
+                    <aside class="sidebar">
+                        <h3>Quick Facts</h3>
+                        <div class="fact-card">
+                            <h4>Experience</h4>
+                            <p>3+ Years in Web Dev</p>
+                        </div>
+                        <div class="fact-card">
+                            <h4>Projects</h4>
+                            <p>50+ Completed</p>
+                        </div>
+                        <div class="fact-card">
+                            <h4>Clients</h4>
+                            <p>30+ Satisfied</p>
+                        </div>
+                        <h3>Image Gallery (Hover to Zoom)</h3>
+                        <div class="gallery">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                                 alt="Project 1" 
+                                 class="zoom-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                                 alt="Project 2" 
+                                 class="zoom-image">
+                        </div>
+                    </aside>
+                </div>
+                <div class="table-container">
+                    <h3>Education Timeline</h3>
+                    <table class="css-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Institution</th>
+                                <th>Course</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2020-2024</td>
+                                <td>University of Tech</td>
+                                <td>Computer Science</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>Online Academy</td>
+                                <td>Web Development</td>
+                                <td>98%</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Coding Bootcamp</td>
+                                <td>Frontend Mastery</td>
+                                <td>Certified</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="css-section">
+            <div class="css-container">
+                <h2 class="css-title">Contact Form</h2>
+                
+                <form action="https://www.w3schools.com/action_page.php" method="post" class="css-form">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Needed:</label>
+                        <select id="service" name="service">
+                            <option value="web">Website Development</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="consult">Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Budget Range:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="budget" value="low"> $500-$1000</label>
+                            <label><input type="radio" name="budget" value="medium"> $1000-$3000</label>
+                            <label><input type="radio" name="budget" value="high"> $3000+</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Project Details:</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter"> Subscribe to newsletter
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required> I agree to terms & conditions
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="css-footer">
+        <div class="css-container">
+            <p>&copy; 2024 Kiarash Forouzmand. CSS Only Version.</p>
+            <p>This page uses ONLY custom CSS, no Bootstrap framework.</p>
+            <div class="footer-links">
+                <a href="index.html">View Bootstrap Version</a> | 
+                <a href="bootstrap-only.html">Bootstrap Only Version</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

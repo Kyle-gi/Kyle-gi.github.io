@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiarash Forouzmand - Bootstrap Only</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-code me-2"></i>
+                Kiarash Forouzmand
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#web">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#design">UI/UX Design</a></li>
+                            <li><a class="dropdown-item" href="#consult">Consulting</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tabs-section">My Skills</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Mixed Version</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <section id="home" class="mb-5">
+            <h2 class="text-center mb-4">My Work Gallery</h2>
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>
+                </div>
+                
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                             class="d-block w-100" 
+                             alt="E-commerce Project">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                            <h2>E-commerce Website</h2>
+                            <p>Full online store with payment integration</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                             class="d-block w-100" 
+                             alt="Dashboard Project">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                            <h2>Admin Dashboard</h2>
+                            <p>Responsive admin panel with analytics</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                             class="d-block w-100" 
+                             alt="Mobile App">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                            <h3>Weather Application</h3>
+                            <p>Real-time weather forecasting app</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        <section id="tabs-section" class="mb-5">
+            <h2 class="text-center mb-4">My Skills (Bootstrap Tabs)</h2>
+            
+            <ul class="nav nav-tabs justify-content-center mb-4" id="skillsTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="frontend-tab" data-bs-toggle="tab" data-bs-target="#frontend">
+                        Frontend
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="backend-tab" data-bs-toggle="tab" data-bs-target="#backend">
+                        Backend
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools">
+                        Tools
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="tab-content p-4 border border-top-0 rounded-bottom bg-secondary bg-opacity-10">
+                <div class="tab-pane fade show active" id="frontend">
+                    <h3>Frontend Technologies</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card bg-dark mb-3">
+                                <div class="card-body text-center">
+                                    <i class="fab fa-html5 fa-3x text-danger mb-2"></i>
+                                    <h4>HTML5</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-dark mb-3">
+                                <div class="card-body text-center">
+                                    <i class="fab fa-css3-alt fa-3x text-primary mb-2"></i>
+                                    <h5>CSS3</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-dark mb-3">
+                                <div class="card-body text-center">
+                                    <i class="fab fa-js fa-3x text-warning mb-2"></i>
+                                    <h5>JavaScript</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="backend">
+                    <h4>Backend Technologies</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-dark mb-3">
+                                <div class="card-body">
+                                    <h5>Node.js</h5>
+                                    <p>Server-side JavaScript runtime</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-dark mb-3">
+                                <div class="card-body">
+                                    <h5>MySQL</h5>
+                                    <p>Database management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="tools">
+                    <h4>Development Tools</h4>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-light">
+                            <i class="fab fa-git-alt me-2"></i> Git Version Control
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-light">
+                            <i class="fas fa-terminal me-2"></i> Command Line
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-light">
+                            <i class="fas fa-code me-2"></i> VS Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item bg-dark">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            What services do you offer?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I offer website development, UI/UX design, and consulting services.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item bg-dark">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            What is your experience level?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I have 3+ years of professional web development experience.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item bg-dark">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Do you work remotely?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, I work with clients from all over the world remotely.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="mb-5">
+            <h2 class="text-center mb-4">My Portfolio</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card bg-secondary h-100">
+                        <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             class="card-img-top" 
+                             alt="Project 1">
+                        <div class="card-body">
+                            <h2 class="card-title">Business Website</h2>
+                            <p class="card-text">Responsive website for local business.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card bg-secondary h-100">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             class="card-img-top" 
+                             alt="Project 2">
+                        <div class="card-body">
+                            <h3 class="card-title">E-commerce Store</h3>
+                            <p class="card-text">Online store with shopping cart.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card bg-secondary h-100">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             class="card-img-top" 
+                             alt="Project 3">
+                        <div class="card-body">
+                            <h3 class="card-title">Mobile App UI</h3>
+                            <p class="card-text">User interface design for mobile app.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-primary text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Kiarash Forouzmand</p>
+                    <p class="mb-0">Bootstrap Only Version - No Custom CSS</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="index.html" class="text-light me-3">Mixed Version</a>
+                    <a href="css-only.html" class="text-light">CSS Only Version</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
